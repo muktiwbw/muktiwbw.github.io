@@ -27,9 +27,9 @@
             <span>COSMICDESERT</span>
           </div>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
             <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
@@ -41,17 +41,21 @@
     </nav>
     <!-- Navbar End -->
     
-    <img src="assets/img/upper-wallpaper.svg" alt="" class="wallpaper header">
+    <!-- Top Wallpaper -->
+    <!-- <img src="assets/img/upper-wallpaper.svg" alt="" class="wallpaper header"> -->
 
     <!-- Jumbotron -->
     <div class="jumbotron">
       <div class="container">
         <div class="jumbotron-flex">
           <div class="jumbotron-text">
-            <h1 class="display-4">Hi, it's <span class="spaced"><strong>MUKTI</strong>.</span></h1>
+            <!-- <h1 class="display-4">Hi, it's <span class="spaced"><strong>MUKTI</strong>.</span></h1> -->
+            <h1 class="display-4">Test <span class="spaced"><strong>TEST</strong>.</span></h1>
             <p class="lead">Experienced <strong>Data Analyst</strong> with a history of working in the telecommunications and financial technology industry. Also a freelance <strong>Web Developer</strong> for about two years, and a person with passion in arts. </p>
-            <a class="btn btn-lg btn-cosmic" href="#" role="button">More about me</a>
-            <a class="btn btn-lg btn-cosmic filled" href="#" role="button">See my projects</a>
+            <div class="jumbotron-button">
+              <a class="btn btn-lg btn-cosmic" href="#" role="button">More about me</a>
+              <a class="btn btn-lg btn-cosmic filled" href="#" role="button">See my projects</a>
+            </div>
           </div>
         </div>
       </div>
@@ -66,25 +70,27 @@
           <div class="summary-img">
             <img class="rounded-circle" src="assets/img/profile.jpg" alt="" srcset="">
           </div>
-          <div class="summary-role">
-            <img src="assets/img/eraser.svg" alt="" class="role-icon">
-            <div class="role-detail">
-              <div class="role-title">Data</div>
-              <div class="role-desc">Analyst</div>
+          <div class="summary-role-container">
+            <div class="summary-role">
+              <img src="assets/img/eraser.svg" alt="" class="role-icon">
+              <div class="role-detail">
+                <div class="role-title">Data</div>
+                <div class="role-desc">Analyst</div>
+              </div>
             </div>
-          </div>
-          <div class="summary-role">
-            <img src="assets/img/eraser.svg" alt="" class="role-icon">
-            <div class="role-detail">
-              <div class="role-title">Web</div>
-              <div class="role-desc">Developer</div>
+            <div class="summary-role">
+              <img src="assets/img/eraser.svg" alt="" class="role-icon">
+              <div class="role-detail">
+                <div class="role-title">Web</div>
+                <div class="role-desc">Developer</div>
+              </div>
             </div>
-          </div>
-          <div class="summary-role">
-            <img src="assets/img/eraser.svg" alt="" class="role-icon">
-            <div class="role-detail">
-              <div class="role-title">Digital</div>
-              <div class="role-desc">Illustrator</div>
+            <div class="summary-role">
+              <img src="assets/img/eraser.svg" alt="" class="role-icon">
+              <div class="role-detail">
+                <div class="role-title">Digital</div>
+                <div class="role-desc">Illustrator</div>
+              </div>
             </div>
           </div>
         </div>
@@ -99,7 +105,7 @@
         <div class="timeline-line"></div>
         <div class="timeline-content">
           <div class="row">
-            <div class="col-6 timeline-wrapper">
+            <div class="col-12 col-md-6 timeline-wrapper">
               <div class="timeline-card">
                 <div class="timeline-title">
                   <h5>FREELANCE WEB DEVELOPER</h5>
@@ -115,7 +121,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 timeline-wrapper">
+            <div class="col-12 col-md-6 timeline-wrapper">
               <div class="timeline-card">
                 <div class="timeline-title">
                   <h5>DATA ANALYST</h5>
@@ -131,7 +137,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 timeline-wrapper">
+            <div class="col-12 col-md-6 timeline-wrapper">
               <div class="timeline-card">
                 <div class="timeline-title">
                   <h5>PREMIUM SEGMENT ANALYTIC</h5>
@@ -148,7 +154,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 timeline-wrapper">
+            <div class="col-12 col-md-6 timeline-wrapper">
               <div class="timeline-card">
                 <div class="timeline-title">
                   <h5>LEAD WEB DEVELOPER (INTERN)</h5>
@@ -165,7 +171,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 timeline-wrapper">
+            <div class="col-12 col-md-6 timeline-wrapper">
               <div class="timeline-card outline-cosmic">
                 <div class="timeline-title">
                   <h5>S1 TEKNIK INFORMATIKA</h5>
@@ -173,7 +179,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 timeline-wrapper">
+            <div class="col-12 col-md-6 timeline-wrapper">
               <div class="timeline-card outline-cosmic">
                 <div class="timeline-title">
                   <h5>SMA - IPA</h5>
@@ -194,54 +200,68 @@
         <div class="skill-wrapper">
           <div class="skill-card outline-cosmic">
             <div class="skill-title">
-              <img src="assets/img/eraser.svg" alt="" srcset="">
-              <h5>Programming Languages</h5>
+              <div class="skill-title-wrapper">
+                <img src="assets/img/eraser.svg" alt="" srcset="">
+                <h5>Programming Languages</h5>
+              </div>
               <hr>
             </div>
             <div class="skill-content">
               <div class="row">
                 <div class="col-6">
                   <img src="assets/img/eraser.svg" alt="" data-toggle="tooltip" data-placement="top" title="Laravel">
+                  <span class="skill-desc">Laravel</span>
                 </div>
                 <div class="col-6">
                   <img src="assets/img/eraser.svg" alt="" data-toggle="tooltip" data-placement="top" title="ExpressJS">
+                  <span class="skill-desc">ExpressJS</span>
                 </div>
                 <div class="col-6">
                   <img src="assets/img/eraser.svg" alt="" data-toggle="tooltip" data-placement="top" title="MySQL">
+                  <span class="skill-desc">MySQL</span>
                 </div>
                 <div class="col-6">
                   <img src="assets/img/eraser.svg" alt="" data-toggle="tooltip" data-placement="top" title="MongoDB">
+                  <span class="skill-desc">MongoDB</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="skill-card outline-cosmic">
             <div class="skill-title">
-              <img src="assets/img/eraser.svg" alt="" srcset="">
-              <h5>Analytic Tools</h5>
+              <div class="skill-title-wrapper">
+                <img src="assets/img/eraser.svg" alt="" srcset="">
+                <h5>Analytic Tools</h5>
+              </div>
               <hr>
             </div>
             <div class="skill-content">
               <div class="row">
                 <div class="col-6">
                   <img src="assets/img/eraser.svg" alt="" data-toggle="tooltip" data-placement="top" title="PostgreSQL">
+                  <span class="skill-desc">PostgreSQL</span>
                 </div>
                 <div class="col-6">
                   <img src="assets/img/eraser.svg" alt="" data-toggle="tooltip" data-placement="top" title="Teradata">
+                  <span class="skill-desc">Teradata</span>
                 </div>
                 <div class="col-6">
                   <img src="assets/img/eraser.svg" alt="" data-toggle="tooltip" data-placement="top" title="Tableau">
+                  <span class="skill-desc">Tableau</span>
                 </div>
                 <div class="col-6">
                   <img src="assets/img/eraser.svg" alt="" data-toggle="tooltip" data-placement="top" title="MS. Power BI">
+                  <span class="skill-desc">MS. Power BI</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="skill-card">
             <div class="skill-title">
-              <img src="assets/img/eraser.svg" alt="" srcset="">
-              <h5>Certifications</h5>
+              <div class="skill-title-wrapper">
+                <img src="assets/img/eraser.svg" alt="" srcset="">
+                <h5>Certifications</h5>
+              </div>
               <hr class="certification">
             </div>
             <div class="skill-content">
@@ -277,7 +297,7 @@
       </div>
       <div class="project-container container">
         <div class="row">
-          <div class="col-6 project-grid">
+          <div class="col-12 col-md-6 col-lg-6 project-grid">
             <div class="project-card">
               <div class="project-wrapper">
                 <div class="project-content">
@@ -298,7 +318,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 project-grid">
+          <div class="col-12 col-md-6 col-lg-6 project-grid">
             <div class="project-card">
               <div class="project-wrapper">
                 <div class="project-content">
@@ -319,7 +339,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 project-grid">
+          <div class="col-12 col-md-6 col-lg-6 project-grid">
             <div class="project-card">
               <div class="project-wrapper">
                 <div class="project-content">
@@ -339,7 +359,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 project-grid">
+          <div class="col-12 col-md-6 col-lg-6 project-grid">
             <div class="project-card">
               <div class="project-wrapper">
                 <div class="project-content">
@@ -388,9 +408,6 @@
         </a>
       </div>
     </footer>
-
-    
-    <img src="assets/img/footer-wallpaper.svg" alt="" class="wallpaper footer">
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
