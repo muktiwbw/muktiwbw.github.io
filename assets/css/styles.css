@@ -66,6 +66,11 @@ img.wallpaper.header {
   padding-bottom: 24px;
 }
 
+.navbar-toggler {
+  position: relative;
+  z-index: 1;
+}
+
 .navbar-brand {
   font-weight: 700;
   color: var(--primary-color) !important;
@@ -79,29 +84,6 @@ img.wallpaper.header {
 .brand-wrapper img {
   width: 28px;
   margin-right: 6px;
-}
-
-.nav-link {
-  color: var(--blank-color) !important;
-}
-
-.nav-link::after {
-  content: "";
-  display: block;
-  margin: auto;
-  width: 0;
-  height: 4px;
-  margin-top: 6px;
-  transition: width 400ms ease;
-}
-
-.nav-link:hover {
-  color: var(--white-color) !important;
-}
-
-.nav-link:hover::after {
-  width: 100%;
-  background-color: var(--white-color);
 }
 
 .jumbotron {
@@ -118,8 +100,8 @@ img.wallpaper.header {
   flex-direction: column;
 }
 
-.jumbotron-text p {
-  margin-top: 18px;
+span.highlight.white {
+  background-color: rgba(255, 255, 255, .85)
 }
 
 .jumbotron-text a {
@@ -128,6 +110,11 @@ img.wallpaper.header {
 
 .jumbotron-text a:last-child {
   margin-left: 10px;
+}
+
+.jumbotron-button img {
+  width: 32px;
+  margin-right: 8px;
 }
 
 .spaced {
@@ -183,14 +170,17 @@ img.wallpaper.header {
 .content-title {
   display: flex;
   margin-bottom: 56px;
+  align-items: center;
+  justify-content: center;
 }
 
 .content-title.wide {
   margin-bottom: 84px;
 }
 
-.content-title h1 {
-  margin: auto;
+.content-title img {
+  width: 64px;
+  margin-right: 10px;
 }
 
 .content-title span {
@@ -256,15 +246,6 @@ img.wallpaper.header {
 
 .skill-content .col-6 {
   padding: 20px;
-}
-
-.skill-content img {
-  filter: grayscale(1);
-  transition: filter 200ms ease;
-}
-
-.skill-content img:hover {
-  filter: grayscale(0);
 }
 
 .skill-content h5 {
@@ -364,10 +345,25 @@ footer {
   width: 32px;
 }
 
-/* For tablets and phones */
+/* 
+  =====================================================================
+  =====================================================================
+  === For tablets and phones ==========================================
+  =====================================================================
+  =====================================================================
+*/
 @media (max-width: 991px) {
+  .nav-link {
+    text-align: right;
+    margin-top: 24px;
+  }
+
+  .nav-link>.highlight {
+    background-color: rgba(255, 255, 255, .85);
+  }
+
   .jumbotron-text {
-    padding-top: 90px;
+    padding-top: 136px;
   }
 
   .jumbotron-button {
@@ -387,12 +383,21 @@ footer {
   }
 
   .summary-role-container {
-    /* flex-direction: column; */
+    width: 100%;
+    justify-content: space-evenly;
   }
 
   .summary-role {
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .summary-role img {
+    margin-bottom: 12px;
+  }
+
+  .summary-role:nth-child(2) {
+    margin-left: 16px;
   }
 
   .summary-img img {
@@ -401,12 +406,8 @@ footer {
     margin-bottom: 22px;
   }
 
-  .summary-role:not(:first-child) {
-    margin-left: 32px;
-  }
-
   .content-title {
-    text-align: center;
+    padding: 0 24px;
   }
 
   .content-title.wide {
@@ -518,10 +519,40 @@ footer {
   }
 }
 
-/* For desktops */
+/* 
+  =====================================================================
+  =====================================================================
+  === For desktops ====================================================
+  =====================================================================
+  =====================================================================
+*/
 @media (min-width: 992px) {
   .nav-link {
     margin-left: 30px;
+    color: var(--blank-color) !important;
+  }
+
+  .nav-link>.highlight {
+    background: none !important;
+  }
+  
+  .nav-link::after {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 0;
+    height: 4px;
+    margin-top: 6px;
+    transition: width 400ms ease;
+  }
+  
+  .nav-link:hover {
+    color: var(--white-color) !important;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+    background-color: var(--white-color);
   }
  
   .jumbotron-text {
@@ -616,7 +647,7 @@ footer {
   }
 
   .skill-card:not(:first-child) {
-    margin-left: -48px;
+    margin-left: -36px;
   }
   
   .skill-card:nth-child(2) {
@@ -637,8 +668,20 @@ footer {
     border-color: var(--white-color);
   }
 
-  .skill-content img {
-    max-width: 100%;
+  .skill-content .col-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skill-content .col-6>img {
+    max-width: 80%;
+    filter: grayscale(.9);
+    transition: filter 200ms ease;
+  }
+  
+  .skill-content img:hover {
+    filter: grayscale(0);
   }
 
   .skill-desc {
