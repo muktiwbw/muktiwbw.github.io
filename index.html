@@ -20,9 +20,9 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav id="home" class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#home">
           <div class="brand-wrapper">
             <img src="assets/img/icons/brand.svg" alt="">
             <span>MUKTIWBW</span>
@@ -33,14 +33,19 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-link active" href="#"><span class="highlight white">Home <span class="sr-only">(current)</span></span></a>
-            <a class="nav-link" href="#"><span class="highlight white">About me</span></a>
-            <a class="nav-link" href="#"><span class="highlight white">Projects</span></a>
+            <a class="nav-link active" href="#home"><span class="highlight white">Home <span class="sr-only">(current)</span></span></a>
+            <a class="nav-link" href="#aboutme"><span class="highlight white">About me</span></a>
+            <a class="nav-link" href="#projects"><span class="highlight white">Projects</span></a>
           </div>
         </div>
       </div>
     </nav>
     <!-- Navbar End -->
+
+    <!-- Top Button -->
+    <a href="#home" class="btn btn-cosmic backtotop">
+      <img src="assets/img/icons/toparrow.svg" alt="top">
+    </a>
     
     <!-- Top Wallpaper -->
     <img src="assets/img/header.svg" alt="" class="wallpaper header">
@@ -62,8 +67,8 @@
               </span> 
             </p>
             <div class="jumbotron-button">
-              <a class="btn btn-lg btn-cosmic" href="#" role="button"><img src="assets/img/icons/aboutme.svg" alt="aboutme"><span>About me</span></a>
-              <a class="btn btn-lg btn-cosmic filled" href="#" role="button"><img src="assets/img/icons/projects_white.svg" alt="projects"><span>My projects</span></a>
+              <a class="btn btn-lg btn-cosmic" href="#aboutme" role="button"><img src="assets/img/icons/aboutme.svg" alt="aboutme"><span>About me</span></a>
+              <a class="btn btn-lg btn-cosmic filled" href="#projects" role="button"><img src="assets/img/icons/projects_white.svg" alt="projects"><span>My projects</span></a>
             </div>
           </div>
         </div>
@@ -107,7 +112,7 @@
       <!-- Summary End -->
 
       <!-- Timeline -->
-      <div class="content-title">
+      <div class="content-title" id="aboutme">
         <img src="assets/img/icons/experience.svg" alt="experience">
         <h1>Work Experiences & <span>Educations</span></h1>
       </div>
@@ -303,7 +308,7 @@
       <!-- Skills End -->
 
       <!-- Projects -->
-      <div class="content-title">
+      <div class="content-title" id="projects">
         <img src="assets/img/icons/projects.svg" alt="projects">
         <h1><span>Projects</span></h1>
       </div>

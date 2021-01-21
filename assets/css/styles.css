@@ -26,6 +26,10 @@
   background-color: var(--primary-lighter-color);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body, a {
   font-family: var(--font);
   color: var(--font-color) !important;
@@ -84,6 +88,18 @@ img.wallpaper.header {
 .brand-wrapper img {
   width: 28px;
   margin-right: 6px;
+}
+
+.backtotop {
+  position: fixed;
+  bottom: 48px;
+  right: 24px;
+  z-index: 1;
+  padding: 12px 12px;
+}
+
+.backtotop img {
+  width: 32px;
 }
 
 .jumbotron {
@@ -172,6 +188,7 @@ span.highlight.white {
   margin-bottom: 56px;
   align-items: center;
   justify-content: center;
+  padding-top: 48px;
 }
 
 .content-title.wide {
@@ -415,10 +432,11 @@ footer {
     width: 112px;
     border: solid 6px var(--primary-color);
     margin-bottom: 22px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
   }
 
   .content-title {
-    padding: 0 24px;
+    padding-left: 24px;
   }
 
   .content-title.wide {
