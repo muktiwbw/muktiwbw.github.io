@@ -35,6 +35,10 @@ body, a {
   color: var(--font-color) !important;
 }
 
+a, a:hover {
+  text-decoration: none;
+}
+
 body {
   background: linear-gradient(180deg, var(--blank-color) 0%, var(--blank-blueish-color) 50%);
 }
@@ -315,9 +319,14 @@ hr.certification {
   color: var(--primary-color) !important;
 }
 
-.project-img img {
+.project-img {
   border-radius: 20px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, .2);
+  max-height: 360px;
+  overflow: hidden;
+}
+
+.project-img img {
 }
 
 .project-tags a{
