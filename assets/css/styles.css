@@ -437,6 +437,19 @@ footer {
     margin-top: -136px;
   }
 
+  .summary-img::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 132px;
+    height: 132px;
+    margin-left: -10px;
+    margin-top: -23px;
+    border-radius: 64px;
+    background-color: var(--white-color);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+  }
+
   .summary-img img {
     width: 112px;
     border: solid 6px var(--primary-color);
