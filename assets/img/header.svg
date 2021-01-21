@@ -31,51 +31,16 @@
     </linearGradient>
     <filter
        inkscape:collect="always"
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        id="filter3076"
        x="-1.8725927e-05"
        width="1.0000376"
        y="-1.9698702e-05"
-       height="1.0000395"
-       inkscape:label="Drop Shadow">
+       height="1.0000395">
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="0.0016721667"
-         id="feGaussianBlur3078"
-         result="fbSourceGraphic" />
-      <feColorMatrix
-         result="fbSourceGraphicAlpha"
-         in="fbSourceGraphic"
-         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
-         id="feColorMatrix7567" />
-      <feFlood
-         id="feFlood7569"
-         flood-opacity="0.423529"
-         flood-color="rgb(0,0,0)"
-         result="flood"
-         in="fbSourceGraphic" />
-      <feComposite
-         in2="fbSourceGraphic"
-         id="feComposite7571"
-         in="flood"
-         operator="in"
-         result="composite1" />
-      <feGaussianBlur
-         id="feGaussianBlur7573"
-         in="composite1"
-         stdDeviation="4.79042"
-         result="blur" />
-      <feOffset
-         id="feOffset7575"
-         dx="0"
-         dy="-0.299401"
-         result="offset" />
-      <feComposite
-         in2="offset"
-         id="feComposite7577"
-         in="fbSourceGraphic"
-         operator="over"
-         result="composite2" />
+         id="feGaussianBlur3078" />
     </filter>
     <linearGradient
        inkscape:collect="always"
@@ -86,6 +51,63 @@
        x2="111.125"
        y2="198.4375"
        gradientUnits="userSpaceOnUse" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB;"
+       id="filter3076-8"
+       x="-1.8725927e-05"
+       width="1.0000376"
+       y="-1.9698702e-05"
+       height="1.0000395"
+       inkscape:label="Drop Shadow">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.0016721667"
+         id="feGaussianBlur3078-4"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix7804" />
+      <feFlood
+         id="feFlood7806"
+         flood-opacity="0.376471"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         in="fbSourceGraphic" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite7808"
+         in="flood"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur7810"
+         in="composite1"
+         stdDeviation="9.58084"
+         result="blur" />
+      <feOffset
+         id="feOffset7812"
+         dx="3.89222"
+         dy="1.1976"
+         result="offset" />
+      <feComposite
+         in2="offset"
+         id="feComposite7814"
+         in="offset"
+         operator="atop"
+         result="composite2" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3140"
+       id="linearGradient7754"
+       gradientUnits="userSpaceOnUse"
+       x1="111.125"
+       y1="42.333332"
+       x2="111.125"
+       y2="198.4375" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -101,7 +123,7 @@
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
-     inkscape:snap-global="false"
+     inkscape:snap-global="true"
      inkscape:window-width="1920"
      inkscape:window-height="1025"
      inkscape:window-x="-8"
@@ -128,6 +150,12 @@
      inkscape:label="bg"
      inkscape:groupmode="layer"
      id="layer1">
+    <path
+       style="fill:url(#linearGradient7754);fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.164659;filter:url(#filter3076-8)"
+       d="m 121.70833,-2.6458333 c 0,0 -17.20595,16.9002073 -12.92964,32.9363783 4.27631,16.036171 18.61595,12.164513 24.05426,31.537804 10.04205,35.773501 -37.15047,24.796669 -62.273803,42.970991 -25.123335,18.17433 -22.450641,50.75152 -43.832209,59.83869 -21.3815609,9.08716 -29.3727806,-3.2422 -29.3727806,-3.2422 v 39.6875 H 211.66667 V -2.6458333 Z"
+       id="path3134-1"
+       sodipodi:nodetypes="cssssccccc"
+       transform="matrix(1,0,0,0.81818184,0,-0.48106053)" />
     <path
        style="fill:url(#linearGradient3158);fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.164659;filter:url(#filter3076)"
        d="m 121.70833,-2.6458333 c 0,0 -17.20595,16.9002073 -12.92964,32.9363783 4.27631,16.036171 18.61595,12.164513 24.05426,31.537804 10.04205,35.773501 -37.15047,24.796669 -62.273803,42.970991 -25.123335,18.17433 -22.450641,50.75152 -43.832209,59.83869 -21.3815609,9.08716 -29.3727806,-3.2422 -29.3727806,-3.2422 v 39.6875 H 211.66667 V -2.6458333 Z"
