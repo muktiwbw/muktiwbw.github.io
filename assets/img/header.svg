@@ -31,16 +31,51 @@
     </linearGradient>
     <filter
        inkscape:collect="always"
-       style="color-interpolation-filters:sRGB"
+       style="color-interpolation-filters:sRGB;"
        id="filter3076"
        x="-1.8725927e-05"
        width="1.0000376"
        y="-1.9698702e-05"
-       height="1.0000395">
+       height="1.0000395"
+       inkscape:label="Drop Shadow">
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="0.0016721667"
-         id="feGaussianBlur3078" />
+         id="feGaussianBlur3078"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix7567" />
+      <feFlood
+         id="feFlood7569"
+         flood-opacity="0.423529"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         in="fbSourceGraphic" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite7571"
+         in="flood"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur7573"
+         in="composite1"
+         stdDeviation="4.79042"
+         result="blur" />
+      <feOffset
+         id="feOffset7575"
+         dx="0"
+         dy="-0.299401"
+         result="offset" />
+      <feComposite
+         in2="offset"
+         id="feComposite7577"
+         in="fbSourceGraphic"
+         operator="over"
+         result="composite2" />
     </filter>
     <linearGradient
        inkscape:collect="always"
@@ -59,13 +94,13 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="422.45398"
-     inkscape:cy="91.87556"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="264.2941"
+     inkscape:cy="327.43707"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
-     showgrid="true"
+     showgrid="false"
      inkscape:snap-global="false"
      inkscape:window-width="1920"
      inkscape:window-height="1025"
@@ -85,7 +120,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
